@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Cookies - Cookies Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍪</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🍪</span>
+                Cookies Store
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="shop.html">Produk</a></li>
+                <li><a href="cart.html">Keranjang</a></li>
+            </ul>
+            <div class="cart-icon" onclick="window.location.href='cart.html'">
+                🛒
+                <span class="cart-badge" id="cart-badge" style="display: none;">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="container">
+        <h2 class="section-title">Koleksi Cookies</h2>
+        <p class="section-subtitle">Pilih cookies favorit Anda</p>
+        
+        <div class="products-grid" id="products-grid">
+            <!-- Products akan di-load dari JavaScript -->
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🍪 Cookies Store - Fresh Homemade Cookies</p>
+        <p>Hubungi kami via WhatsApp untuk pemesanan</p>
+        <div class="social-links">
+            <a href="#">📱</a>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

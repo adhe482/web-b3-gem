@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Store - Homemade Fresh Cookies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍪</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🍪</span>
+                Cookies Store
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="shop.html">Produk</a></li>
+                <li><a href="cart.html">Keranjang</a></li>
+            </ul>
+            <div class="cart-icon" onclick="window.location.href='cart.html'">
+                🛒
+                <span class="cart-badge" id="cart-badge" style="display: none;">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fresh Homemade Cookies</h1>
+            <p>Rasakan kelezatan cookies homemade yang dibuat dengan bahan-bahan pilihan</p>
+            <a href="shop.html" class="btn btn-primary">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container">
+        <h2 class="section-title">Tentang Kami</h2>
+        <p class="section-subtitle">Kami membuat cookies segar setiap hari dengan bahan-bahan alami</p>
+        
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
+                Cookies Store adalah toko cookies homemade yang berkomitmen untuk memberikan kualitas terbaik. 
+                Setiap cookies kami buat dengan cinta menggunakan bahan-bahan pilihan tanpa pengawet. 
+                Kami menawarkan berbagai varian rasa yanglezat dan unik untuk满足 setiap lidah.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container">
+        <h2 class="section-title">Produk Unggulan</h2>
+        <p class="section-subtitle">Cookies favorit pelanggan kami</p>
+        
+        <div class="products-grid" id="products-grid">
+            <!-- Products akan di-load dari JavaScript -->
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="shop.html" class="btn btn-primary">Lihat Semua Produk</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container" style="background-color: var(--white); border-radius: 15px; margin: 2rem auto;">
+        <h2 class="section-title">Mengapa Memilih Kami?</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <div style="text-align: center; padding: 2rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🧈</div>
+                <h3>Bahan Alami</h3>
+                <p style="color: var(--text-light); margin-top: 0.5rem;">Menggunakan bahan-bahan alami tanpa pengawet</p>
+            </div>
+            <div style="text-align: center; padding: 2rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">👨‍🍳</div>
+                <h3>Fresh Daily</h3>
+                <p style="color: var(--text-light); margin-top: 0.5rem;">Dibuat segar setiap hari</p>
+            </div>
+            <div style="text-align: center; padding: 2rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p style="color: var(--text-light); margin-top: 0.5rem;">Pengiriman cepat ke seluruh wilayah</p>
+            </div>
+            <div style="text-align: center; padding: 2rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">💯</div>
+                <h3>Best Quality</h3>
+                <p style="color: var(--text-light); margin-top: 0.5rem;">Kualitas terbaik untuk Anda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🍪 Cookies Store - Fresh Homemade Cookies</p>
+        <p>Hubungi kami via WhatsApp untuk pemesanan</p>
+        <div class="social-links">
+            <a href="#">📱</a>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
